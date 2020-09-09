@@ -14,7 +14,7 @@ if (botUrl === undefined) {
 exports.sendCorona = async (chat_id) => {
   try {
     const corona = await axios.get(
-      "https://w3qa5ydb4l.execute-api.eu-west-1.amazonaws.com/prod/finnishCoronaData"
+      "https://w3qa5ydb4l.execute-api.eu-west-1.amazonaws.com/prod/finnishCoronaData/v2"
     );
 
     let CasesByPlace = {};
